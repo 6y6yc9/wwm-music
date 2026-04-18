@@ -1,0 +1,21 @@
+# WWM Music Auto-Player — Full Dependencies
+# Includes YouTube download, AI transcription, and source separation
+#
+# Install: pip install -r requirements-full.txt
+# Note: This will download ~2 GB of dependencies (PyTorch, Demucs models)
+# For basic MIDI-only usage, use requirements.txt instead
+
+# === Core (always needed) ===
+pynput>=1.7.6          # Keyboard simulation
+mido>=1.2.10           # MIDI file parsing
+
+# === YouTube Download ===
+yt-dlp>=2023.10.13     # YouTube audio download (requires FFmpeg in PATH)
+
+# === AI Audio Transcription ===
+basic-pitch>=0.2.0     # Audio-to-MIDI transcription model
+numpy<2.0.0            # NumPy (basic-pitch compatibility)
+
+# === Source Separation ===
+demucs>=4.0.0          # Audio stem separation (vocals/bass/drums/other)
+                       # Note: pulls PyTorch as dependency (~1.5 GB)

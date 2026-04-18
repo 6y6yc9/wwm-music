@@ -1,0 +1,8 @@
+# WWM Music Auto-Player — Core Dependencies
+# For basic MIDI import and playback functionality
+#
+# Install: pip install -r requirements.txt
+# For YouTube + AI features, use requirements-full.txt instead
+
+pynput>=1.7.6          # Keyboard simulation
+mido>=1.2.10           # MIDI file parsing

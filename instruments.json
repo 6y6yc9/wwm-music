@@ -1,0 +1,184 @@
+{
+  "default": {
+    "name": "Default (Piano/Generic)",
+    "range": [
+      48,
+      83
+    ],
+    "mapping": "standard_21",
+    "description": "Standard 3-octave range (C3-B5)",
+    "duration_scale": 1.0,
+    "min_pause_ms": 5,
+    "max_duration_ms": 0
+  },
+  "guqin": {
+    "name": "Guqin (古琴)",
+    "range": [
+      48,
+      83
+    ],
+    "mapping": "standard_21",
+    "description": "Plucked zither, deep and resonant",
+    "duration_scale": 1.0,
+    "min_pause_ms": 10,
+    "max_duration_ms": 0
+  },
+  "pipa": {
+    "name": "Pipa (琵琶)",
+    "range": [
+      48,
+      83
+    ],
+    "mapping": "standard_21",
+    "description": "Plucked lute, bright and percussive",
+    "duration_scale": 0.6,
+    "min_pause_ms": 15,
+    "max_duration_ms": 400
+  },
+  "erhu": {
+    "name": "Erhu (二胡)",
+    "range": [
+      48,
+      83
+    ],
+    "mapping": "standard_21",
+    "description": "Bowed string, expressive and singing",
+    "duration_scale": 1.2,
+    "min_pause_ms": 5,
+    "max_duration_ms": 0
+  },
+  "fangxiang": {
+    "name": "Fangxiang (方响)",
+    "range": [
+      48,
+      83
+    ],
+    "mapping": "standard_21",
+    "description": "Struck metal chimes, bright and ringing",
+    "duration_scale": 0.7,
+    "min_pause_ms": 10,
+    "max_duration_ms": 600
+  },
+  "konghou": {
+    "name": "Konghou (箜篌)",
+    "range": [
+      48,
+      83
+    ],
+    "mapping": "standard_21",
+    "description": "Harp-like, wide and flowing",
+    "duration_scale": 0.9,
+    "min_pause_ms": 10,
+    "max_duration_ms": 0
+  },
+  "xiao": {
+    "name": "Xiao (箫)",
+    "range": [
+      48,
+      83
+    ],
+    "mapping": "standard_21",
+    "description": "Vertical bamboo flute, warm and mellow",
+    "duration_scale": 1.1,
+    "min_pause_ms": 20,
+    "max_duration_ms": 0
+  },
+  "guzheng": {
+    "name": "Guzheng (古筝)",
+    "range": [
+      48,
+      83
+    ],
+    "mapping": "standard_21",
+    "description": "Plucked zither, bright and sparkling",
+    "duration_scale": 0.8,
+    "min_pause_ms": 10,
+    "max_duration_ms": 500
+  },
+  "dizi": {
+    "name": "Dizi (笛子)",
+    "range": [
+      48,
+      83
+    ],
+    "mapping": "standard_21",
+    "description": "Transverse bamboo flute, bright and piercing",
+    "duration_scale": 1.0,
+    "min_pause_ms": 20,
+    "max_duration_ms": 0
+  },
+  "suona": {
+    "name": "Suona (唢呐)",
+    "range": [
+      48,
+      83
+    ],
+    "mapping": "standard_21",
+    "description": "Double-reed horn, loud and festive",
+    "duration_scale": 0.9,
+    "min_pause_ms": 15,
+    "max_duration_ms": 0
+  },
+  "hulusi": {
+    "name": "Hulusi (葫芦丝)",
+    "range": [
+      48,
+      83
+    ],
+    "mapping": "standard_21",
+    "description": "Gourd flute, soft and gentle",
+    "duration_scale": 1.1,
+    "min_pause_ms": 20,
+    "max_duration_ms": 0
+  },
+  "xun": {
+    "name": "Xun (埙)",
+    "range": [
+      48,
+      83
+    ],
+    "mapping": "standard_21",
+    "description": "Clay ocarina, dark and mystical",
+    "duration_scale": 1.1,
+    "min_pause_ms": 15,
+    "max_duration_ms": 0
+  },
+  "bianzhong": {
+    "name": "Bianzhong (编钟)",
+    "range": [
+      48,
+      83
+    ],
+    "mapping": "standard_21",
+    "description": "Bronze bell chimes, grand and ceremonial",
+    "duration_scale": 0.5,
+    "min_pause_ms": 15,
+    "max_duration_ms": 600
+  },
+  "ramskin_drum": {
+    "name": "Ramskin Drum (羊皮鼓)",
+    "type": "percussion",
+    "mapping": "percussion_6",
+    "keys": ["A", "S", "D", "G", "H", "J"],
+    "key_names": {
+      "A": "Center (鼓面中)",
+      "S": "Edge (鼓面边)",
+      "D": "Rim (鼓边)",
+      "G": "Shaker (沙锤)",
+      "H": "Clap (拍手)",
+      "J": "Snare (小鼓)"
+    },
+    "midi_drum_map": {
+      "35": "A", "36": "A",
+      "38": "S", "47": "S", "48": "S",
+      "37": "D", "56": "D", "76": "D",
+      "69": "G", "70": "G", "82": "G",
+      "39": "H", "54": "H",
+      "40": "J", "41": "J", "43": "J", "45": "J", "50": "J"
+    },
+    "description": "Percussion drum with 6 articulations",
+    "duration_scale": 0.3,
+    "min_pause_ms": 30,
+    "max_duration_ms": 200
+  }
+}

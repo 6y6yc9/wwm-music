@@ -1,9 +1,9 @@
 # 🎵 WWM Music Auto-Player
 
-Автоматический проигрыватель мелодий на музыкальных инструментах в игре **Where Winds Meet** (и подобных).  
-Поддерживает импорт MIDI, загрузку с YouTube, AI-транскрипцию и 14 игровых инструментов.
+Automatic melody player for in-game instruments in **Where Winds Meet** (and similar games).  
+Supports MIDI import, YouTube download with AI transcription, and 14 in-game instruments.
 
-*Automatic melody player for in-game instruments in **Where Winds Meet**. Supports MIDI import, YouTube download with AI transcription, and 14 in-game instruments.*
+*Автоматический проигрыватель мелодий для игры **Where Winds Meet**. Поддерживает импорт MIDI, скачивание с YouTube с AI-транскрипцией и 14 игровых инструментов. (См. русскую версию характеристик ниже).*
 
 ![Version](https://img.shields.io/badge/version-2.0-blue)
 ![Python](https://img.shields.io/badge/python-3.8+-green)
@@ -12,65 +12,65 @@
 
 ---
 
-## 🎯 Возможности / Features
+## 🎯 Features
 
-| Функция | Описание |
+| Feature | Description |
 |---------|----------|
-| 🎹 **MIDI Import** | Импорт `.mid` файлов с выбором треков и гибкой конвертацией |
-| 🔴 **YouTube Import** | Скачивание с YouTube → AI-транскрипция → автоматическая конвертация |
-| 🔀 **Source Separation** | Разделение аудио на стемы (Demucs): вокал, мелодия, без ударных |
-| 🎵 **Smart Melody** | AI-извлечение узнаваемой мелодии из многотрековых файлов |
-| 🎼 **Smart Multi-Track** | Независимая транспозиция каждого трека для чистого звучания |
-| 🥁 **Rhythm Filter** | Удаление шума с сохранением ритмического паттерна |
-| 🎮 **Low-Level Input** | DirectInput scan codes — работает в играх с античитом |
-| 📁 **55+ Ready Melodies** | Коллекция готовых мелодий (аниме, рок, поп, классика, и др.) |
+| 🎹 **MIDI Import** | Import `.mid` files with track selection and flexible conversion |
+| 🔴 **YouTube Import** | Download from YouTube → AI transcription → auto conversion |
+| 🔀 **Source Separation** | Audio stem separation (Demucs): vocals, melody, no drums |
+| 🎵 **Smart Melody** | AI extraction of recognizable melodies from multi-track files |
+| 🎼 **Smart Multi-Track** | Independent transposition of each track for clean playback |
+| 🥁 **Rhythm Filter** | Noise reduction while preserving rhythmic patterns |
+| 🎮 **Low-Level Input** | DirectInput scan codes — works in games with anti-cheat |
+| 📁 **55+ Ready Melodies** | Pre-bundled melodies (anime, rock, pop, classical, etc.) |
 | 🎻 **14 Instruments** | Guqin, Pipa, Erhu, Konghou, Xiao, Dizi, Suona, Hulusi, Xun, Guzheng, Fangxiang, Bianzhong, Ramskin Drum + Default Piano |
 
 ---
 
-## ⚙️ Системные требования / Requirements
+## ⚙️ Requirements
 
-- **OS:** Windows 10/11 (используется Windows SendInput API)
+- **OS:** Windows 10/11 (uses Windows SendInput API)
 - **Python:** 3.8+
-- **FFmpeg:** необходим для YouTube-функций ([скачать](https://ffmpeg.org/download.html))
+- **FFmpeg:** Required for YouTube features ([download](https://ffmpeg.org/download.html))
 
 ---
 
-## 📦 Установка / Installation
+## 📦 Installation
 
-### 1. Клонировать репозиторий
+### 1. Clone the repository
 
 ```bash
 git clone https://github.com/YOUR_USERNAME/wwm-music.git
 cd wwm-music
 ```
 
-### 2. Установить зависимости
+### 2. Install dependencies
 
-**Базовая установка** (MIDI + воспроизведение):
+**Basic Installation** (MIDI + Playback only):
 ```bash
 pip install -r requirements.txt
 ```
 
-**Полная установка** (+ YouTube + AI-транскрипция + Source Separation):
+**Full Installation** (+ YouTube + AI Transcription + Source Separation):
 ```bash
 pip install -r requirements-full.txt
 ```
 
-> ⚠️ Полная установка включает PyTorch и Demucs (~2 GB). Если вам нужен только MIDI-импорт — достаточно базовой.
+> ⚠️ Full installation includes PyTorch and Demucs (~2 GB). If you only need MIDI import, the basic installation is sufficient.
 
-### 3. FFmpeg (для YouTube)
+### 3. FFmpeg (for YouTube)
 
-Если планируете использовать YouTube-импорт, установите [FFmpeg](https://ffmpeg.org/download.html) и добавьте его в PATH.
+If you plan to use YouTube import, install [FFmpeg](https://ffmpeg.org/download.html) and add it to your system PATH.
 
 ---
 
-## 🚀 Запуск / Quick Start
+## 🚀 Quick Start
 
-**Способ 1: Двойной клик**
-- Найдите файл `START.bat` и запустите его
+**Method 1: Double-click**
+- Find the `START.bat` file and run it.
 
-**Способ 2: Командная строка**
+**Method 2: Command Line**
 ```bash
 cd path/to/wwm-music
 python main.py
@@ -78,32 +78,32 @@ python main.py
 
 ---
 
-## 🎮 Использование / How to Use
+## 🎮 How to Use
 
-### Импорт MIDI
-1. Нажмите **🎹 Import MIDI** → выберите `.mid` файл
-2. Выберите треки и настройте опции конвертации
-3. Нажмите **▶ Play** → переключитесь в игру за 3 секунды
-4. Убедитесь, что инструмент открыт в игре!
+### MIDI Import
+1. Click **🎹 Import MIDI** → select a `.mid` file
+2. Select tracks and adjust conversion options
+3. Click **▶ Play** → switch to the game window within 3 seconds
+4. Ensure your instrument is open in-game!
 
-### Импорт с YouTube
-1. Нажмите **🔴 YouTube** → вставьте ссылку
-2. Выберите режим разделения (Vocals / Melody / Full No Drums)
-3. Выберите пресет транскрипции
-4. Дождитесь скачивания и AI-обработки
-5. Мелодия загрузится автоматически
+### YouTube Import
+1. Click **🔴 YouTube** → paste the link
+2. Select separation mode (Vocals / Melody / Full No Drums)
+3. Choose transcription preset
+4. Wait for download and AI processing
+5. The melody will load automatically
 
-### Загрузка готовой мелодии
-1. Нажмите **📁 Load Melody** → выберите `.txt` файл из `melodies/`
-2. Нажмите **▶ Play**
+### Load Ready Melody
+1. Click **📁 Load Melody** → choose a `.txt` file from `melodies/`
+2. Click **▶ Play**
 
-> 📖 Подробная документация по всем опциям конвертации: [USAGE_GUIDE.md](USAGE_GUIDE.md)
+> 📖 Detailed documentation for conversion options: [USAGE_GUIDE.md](USAGE_GUIDE.md)
 
 ---
 
-## 🎹 Маппинг клавиш / Key Mapping
+## 🎹 Key Mapping
 
-| Октава | Клавиши | Ноты |
+| Octave | Keys | Notes |
 |--------|---------|------|
 | **High Pitch** | Q W E R T Y U | 1 2 3 4 5 6 7 |
 | **Medium Pitch** | A S D F G H J | 1 2 3 4 5 6 7 |
@@ -111,76 +111,93 @@ python main.py
 
 ---
 
-## 📝 Формат мелодий / Melody Format
+## 📝 Melody Format
 
-Мелодии хранятся в `.txt` файлах:
+Melodies are stored in `.txt` files:
 
 ```
-КЛАВИША ДЛИТЕЛЬНОСТЬ_МС [ПАУЗА_МС]
+KEY DURATION_MS [PAUSE_MS]
 ```
 
-Пример:
+Example:
 ```txt
 # Twinkle Twinkle Little Star
-A 400 100    # Нота A (Mid 1), играть 400мс, пауза 100мс
+A 400 100    # Note A (Mid 1), play 400ms, pause 100ms
 A 400 100
-D 400 100    # Нота D (Mid 3)
+D 400 100    # Note D (Mid 3)
 D 400 100
-F 800 0      # Нота F (Mid 4), играть 800мс
+F 800 0      # Note F (Mid 4), play 800ms
 ```
 
 ---
 
-## 🛠️ Структура проекта / Project Structure
+## 🛠️ Project Structure
 
 ```
 wwm-music/
-├── main.py                 # GUI приложение (tkinter)
-├── midi_converter.py       # Конвертер MIDI → текстовый формат
-├── note_parser.py          # Парсер файлов мелодий
-├── key_simulator.py        # Симулятор нажатий (pynput)
-├── key_simulator_lowlevel.py  # Симулятор нажатий (DirectInput/SendInput)
-├── playback_engine.py      # Движок воспроизведения с drift compensation
-├── youtube_downloader.py   # Загрузка аудио с YouTube (yt-dlp)
-├── audio_transcriber.py    # AI-транскрипция аудио → MIDI (Basic Pitch)
+├── main.py                 # GUI application (tkinter)
+├── midi_converter.py       # Converter MIDI → text format
+├── note_parser.py          # Melody file parser
+├── key_simulator.py        # Key simulator (pynput)
+├── key_simulator_lowlevel.py  # Key simulator (DirectInput/SendInput)
+├── playback_engine.py      # Playback engine with drift compensation
+├── youtube_downloader.py   # YouTube audio downloader (yt-dlp)
+├── audio_transcriber.py    # AI transcription audio → MIDI (Basic Pitch)
 ├── audio_separator.py      # Source separation (Demucs)
-├── instruments.json        # Конфигурация 14 инструментов
-├── requirements.txt        # Базовые зависимости
-├── requirements-full.txt   # Полные зависимости (YouTube + AI)
-├── START.bat               # Быстрый запуск (Windows)
-├── melodies/               # 55+ готовых мелодий
-├── tools/                  # Утилиты разработки
+├── instruments.json        # Configuration for 14 instruments
+├── requirements.txt        # Basic dependencies
+├── requirements-full.txt   # Full dependencies (YouTube + AI)
+├── START.bat               # Quick launcher (Windows)
+├── melodies/               # 55+ ready melodies
+├── tools/                  # Development scripts
 │   ├── analyze_key.py
 │   ├── analyze_midi.py
 │   ├── create_test_midi.py
 │   └── debug_midi_range.py
-├── USAGE_GUIDE.md          # Подробный гайд по опциям
-├── HOW_TO_START.md         # Инструкция по запуску
+├── USAGE_GUIDE.md          # Detailed options guide
+├── HOW_TO_START.md         # Troubleshooting & startup guide
 ├── LICENSE                 # MIT License
-└── README.md               # Этот файл
+└── README.md               # This file
 ```
 
 ---
 
-## 🐛 Известные ограничения / Known Limitations
+## 🐛 Known Limitations
 
-- **Только Windows** — используется Windows SendInput API для совместимости с играми
-- Минимальная длительность ноты: ~50мс
-- YouTube-транскрипция требует FFmpeg в PATH
-- Source Separation (Demucs) требует ~2 GB дополнительных зависимостей
-
----
-
-## 🤝 Тестирование / Testing
-
-Нашли баг? Есть идея? Создайте [Issue](../../issues) с описанием:
-1. Что вы делали (шаги для воспроизведения)
-2. Что ожидали
-3. Что произошло на самом деле
-4. Скриншот / текст ошибки
+- **Windows only** — Uses Windows SendInput API for game compatibility
+- Minimum note duration: ~50ms
+- YouTube transcription requires FFmpeg in PATH
+- Source Separation (Demucs) requires ~2 GB of additional dependencies
 
 ---
 
-## 📄 Лицензия / License
+## 🤝 Testing & Bug Reports
 
-[MIT License](LICENSE) — используйте свободно! 🎉
+Found a bug? Have an idea? Create an [Issue](../../issues) describing:
+1. Steps to reproduce
+2. Expected behavior
+3. Actual behavior
+4. Screenshot / text of the error
+
+---
+
+## 🇷🇺 Русское описание (Russian Description)
+
+Автоматический проигрыватель мелодий на музыкальных инструментах в игре **Where Winds Meet** (и подобных).
+Приложение переводит MIDI-файлы или скачанные видео с YouTube в нажатия кнопок на клавиатуре.
+
+**Ключевые особенности:**
+- **Импорт MIDI:** детальная настройка треков, квантизация 1/16, арпеджиатор аккордов.
+- **Импорт YouTube:** скачивание звука, разделение аудиодорожек с помощью AI (Demucs) и перевод в ноты (Basic Pitch).
+- **Smart Melody & Smart Multi-Track:** автоматическое улучшение звучания полифонических мелодий и независимая транспозиция дорожек.
+- **14 Инструментов:** адаптировано под реальные игровые частоты (Гуцинь, Пипа, Эрху, Дизи, и др.).
+- **Обход античитов:** используется низкоуровневый `SendInput API` (DirectInput scan codes).
+
+**Как запустить:**
+Запустите `START.bat` или введите в консоли `python main.py`. См. `HOW_TO_START.md` для решения проблем с установкой и `USAGE_GUIDE.md` для описания полного функционала.
+
+---
+
+## 📄 License
+
+[MIT License](LICENSE) — use freely! 🎉

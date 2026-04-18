@@ -1,9 +1,16 @@
 @echo off
+:: Check for Administrator privileges
+net session >nul 2>&1
+if %errorLevel% neq 0 (
+    echo Requesting Administrator privileges (required for game input)...
+    powershell -Command "Start-Process '%~dpnx0' -Verb RunAs"
+    exit /b
+)
+
 echo ========================================
 echo   WWM Music Auto-Player Launcher
 echo ========================================
 echo.
-
 cd /d "%~dp0"
 
 REM Check if Python is available
@@ -39,6 +46,6 @@ if %ERRORLEVEL% NEQ 0 (
 echo Starting application...
 echo.
 
-REM Launch without console window (pythonw)
-REM If you need to see debug output, run instead: python main.py
-start "" pythonw main.py
+REM Launch with standard python (console will be auto-hidden by script immediately)
+REM This ensures better compatibility with games requiring elevated privileges
+python main.py

@@ -10,6 +10,7 @@ Supports MIDI import, YouTube download with AI transcription, and 14 in-game ins
 ![Platform](https://img.shields.io/badge/platform-Windows-lightgrey)
 ![License](https://img.shields.io/badge/license-MIT-orange)
 
+WWM Music player ([download](https://github.com/6y6yc9/wwm-music/releases/tag/v2.0))
 ---
 
 ## 🎯 Features

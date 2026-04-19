@@ -11,6 +11,8 @@ Supports MIDI import, YouTube download with AI transcription, and 14 in-game ins
 ![License](https://img.shields.io/badge/license-MIT-orange)
 
 WWM Music player ([download](https://github.com/6y6yc9/wwm-music/releases/tag/v2.0))
+If you don’t know how to use GitHub, download the app here:
+Google drive ([download](https://drive.google.com/file/d/1PQiYP-RzxFrKrhgLiB_wP2zXPAb-5gGw/view?usp=drive_link))
 ---
 
 ## 🎯 Features
